@@ -79,7 +79,7 @@ public class TicketServiceImpl implements TicketService {
         if(no_of_tickets > 20 || no_of_tickets <= 0) {
             return false;
         }
-        if(adult_count != infant_count) {
+        if(adult_count < infant_count) {
             return false;
         }
         if(child_count>0 || infant_count > 0) {
